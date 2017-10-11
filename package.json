@@ -4,6 +4,7 @@
   "main": "pod-starter.js",
   "author": "Adam Sandor",
   "dependencies": {
-    "kubernetes-client": "3.10.1"
+    "kubernetes-client": "3.10.1",
+    "express": "4.16.2"
   }
 }
