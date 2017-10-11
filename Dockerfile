@@ -4,6 +4,8 @@ WORKDIR /usr/src
 
 COPY package.json .
 RUN npm install
-COPY . .
 
-CMD node pod-starter.js
+COPY server.js .
+COPY tenant-query.js .
+
+CMD node server.js

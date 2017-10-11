@@ -4,17 +4,17 @@ const Api = require('kubernetes-client');
 
 // using kubernetes-client library: https://www.npmjs.com/package/kubernetes-client
 
-// const k8sConfig = {
-//     url: 'https://kubernetes.default.svc.cluster.local',
-//     ca: fs.readFileSync('/var/run/secrets/kubernetes.io/serviceaccount/ca.crt'),
-//     auth: {
-//         bearer: fs.readFileSync('/var/run/secrets/kubernetes.io/serviceaccount/token')
-//     },
-//     namespace: fs.readFileSync('/var/run/secrets/kubernetes.io/serviceaccount/namespace')
-// };
 const k8sConfig = {
-    url: 'http://127.0.0.1:8001'
+    url: 'https://kubernetes.default.svc.cluster.local',
+    ca: fs.readFileSync('/var/run/secrets/kubernetes.io/serviceaccount/ca.crt'),
+    auth: {
+        bearer: fs.readFileSync('/var/run/secrets/kubernetes.io/serviceaccount/token')
+    },
+    namespace: fs.readFileSync('/var/run/secrets/kubernetes.io/serviceaccount/namespace')
 };
+// const k8sConfig = {
+//     url: 'http://127.0.0.1:8001'
+// };
 
 
 module.exports.tenantquery = {
