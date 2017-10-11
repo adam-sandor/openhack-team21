@@ -1,0 +1,9 @@
+{
+  "name": "podstarter",
+  "version": "1.0.0",
+  "main": "pod-starter.js",
+  "author": "Adam Sandor",
+  "dependencies": {
+    "kubernetes-client": "3.10.1"
+  }
+}
